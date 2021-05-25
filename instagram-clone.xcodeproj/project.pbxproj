@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B410E4C2265D38AB003398A1 /* instagram_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410E4C1265D38AB003398A1 /* instagram_cloneApp.swift */; };
-		B410E4C4265D38AB003398A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410E4C3265D38AB003398A1 /* ContentView.swift */; };
 		B410E4C6265D38AC003398A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B410E4C5265D38AC003398A1 /* Assets.xcassets */; };
 		B410E4C9265D38AC003398A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B410E4C8265D38AC003398A1 /* Preview Assets.xcassets */; };
 		B410E4D4265D38AD003398A1 /* instagram_cloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410E4D3265D38AD003398A1 /* instagram_cloneTests.swift */; };
 		B410E4DF265D38AD003398A1 /* instagram_cloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410E4DE265D38AD003398A1 /* instagram_cloneUITests.swift */; };
+		B410E507265D3C92003398A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410E506265D3C92003398A1 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 /* Begin PBXFileReference section */
 		B410E4BE265D38AB003398A1 /* instagram-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagram-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B410E4C1265D38AB003398A1 /* instagram_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagram_cloneApp.swift; sourceTree = "<group>"; };
-		B410E4C3265D38AB003398A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B410E4C5265D38AC003398A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B410E4C8265D38AC003398A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B410E4CA265D38AC003398A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		B410E4DA265D38AD003398A1 /* instagram-cloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instagram-cloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B410E4DE265D38AD003398A1 /* instagram_cloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagram_cloneUITests.swift; sourceTree = "<group>"; };
 		B410E4E0265D38AD003398A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B410E506265D3C92003398A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +95,14 @@
 		B410E4C0265D38AB003398A1 /* instagram-clone */ = {
 			isa = PBXGroup;
 			children = (
+				B410E4F1265D3A09003398A1 /* ViewModel */,
+				B410E4F0265D39F3003398A1 /* View */,
+				B410E4EF265D39E9003398A1 /* Model */,
+				B410E4F2265D3A25003398A1 /* API */,
+				B410E4F3265D3A30003398A1 /* Utils */,
 				B410E4C1265D38AB003398A1 /* instagram_cloneApp.swift */,
-				B410E4C3265D38AB003398A1 /* ContentView.swift */,
 				B410E4C5265D38AC003398A1 /* Assets.xcassets */,
 				B410E4CA265D38AC003398A1 /* Info.plist */,
-				B410E4C7265D38AC003398A1 /* Preview Content */,
 			);
 			path = "instagram-clone";
 			sourceTree = "<group>";
@@ -124,10 +127,143 @@
 		B410E4DD265D38AD003398A1 /* instagram-cloneUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B410E4C7265D38AC003398A1 /* Preview Content */,
 				B410E4DE265D38AD003398A1 /* instagram_cloneUITests.swift */,
 				B410E4E0265D38AD003398A1 /* Info.plist */,
 			);
 			path = "instagram-cloneUITests";
+			sourceTree = "<group>";
+		};
+		B410E4EF265D39E9003398A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B410E4F0265D39F3003398A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B410E4FE265D3B6F003398A1 /* Authentication */,
+				B410E4FD265D3B67003398A1 /* Notifications */,
+				B410E4F9265D3B13003398A1 /* Main */,
+				B410E4F8265D3B09003398A1 /* UploadPost */,
+				B410E4F7265D3AF0003398A1 /* Profile */,
+				B410E4F6265D3AE7003398A1 /* Feed */,
+				B410E4F5265D3AD3003398A1 /* Comments */,
+				B410E4F4265D3ACC003398A1 /* Search */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B410E4F1265D3A09003398A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B410E502265D3BFD003398A1 /* Feed */,
+				B410E501265D3BEE003398A1 /* Notifications */,
+				B410E500265D3BE7003398A1 /* Authentication */,
+				B410E4FF265D3BDF003398A1 /* Profile */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B410E4F2265D3A25003398A1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B410E4F3265D3A30003398A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B410E4F4265D3ACC003398A1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B410E4F5265D3AD3003398A1 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		B410E4F6265D3AE7003398A1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		B410E4F7265D3AF0003398A1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B410E4F8265D3B09003398A1 /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		B410E4F9265D3B13003398A1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B410E506265D3C92003398A1 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B410E4FD265D3B67003398A1 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		B410E4FE265D3B6F003398A1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B410E4FF265D3BDF003398A1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B410E500265D3BE7003398A1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B410E501265D3BEE003398A1 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		B410E502265D3BFD003398A1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B410E4C4265D38AB003398A1 /* ContentView.swift in Sources */,
+				B410E507265D3C92003398A1 /* ContentView.swift in Sources */,
 				B410E4C2265D38AB003398A1 /* instagram_cloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
